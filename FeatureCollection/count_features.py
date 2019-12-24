@@ -16,8 +16,8 @@ bridge_photos = photos_near_sf.filter(
     ee.Filter().Or(ee.Filter.stringContains('title', 'Bridge'),
                    ee.Filter.stringContains('title', 'bridge')))
 
-Map.addLayer(photos_near_sf, {'color': '0040b0'})
-Map.addLayer(bridge_photos, {'color': 'e02070'})
+Map.addLayer(photos_near_sf, {'color': '0040b0'}, "Photos near SF")
+Map.addLayer(bridge_photos, {'color': 'e02070'}, "Bridge photos")
 
 print ('There are %d bridge photos around SF.' %
        bridge_photos.size().getInfo())

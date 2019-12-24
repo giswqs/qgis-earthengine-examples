@@ -14,4 +14,4 @@ fc = (ee.FeatureCollection('ft:1Ec8IWsP8asxN-ywSqgXWMuBaxI6pPaeh6hC64lA')
 
 # Paint it into a blank image.
 image1 = ee.Image(0).mask(0)
-Map.addLayer(image1.paint(fc, 0, 5))
+Map.addLayer(image1.paint(fc, 0, 5), {}, "TNC Ecoregions")

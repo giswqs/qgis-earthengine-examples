@@ -28,4 +28,4 @@ Map.addLayer(image3, {
     'palette': ['000000', 'FF0000', '00FF00', '0000FF'],
     'max': 3,
     'opacity': 0.5
-})
+}, "Colorado & Utah")

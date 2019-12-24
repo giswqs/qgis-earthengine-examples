@@ -5,18 +5,14 @@ Computes the mean NDVI and SAVI by mapping an expression over a collection
 and taking the mean.  This intentionally exercises both variants of
 Image.expression.
 """
-
-import datetime
 import ee
 from ee_plugin import Map
 
-
-
+fc = ee.FeatureCollection('TIGER/2018/States').filter(ee.Filter.eq('STUSPS', 'MN'))
 # Filter the L7 collection to a single month.
 collection = (ee.ImageCollection('LE7_L1T_TOA')
-              .filterDate(datetime.datetime(2002, 11, 1),
-                          datetime.datetime(2002, 12, 1)))
-
+              .filterDate("2002-11-01", "2002-12-01")
+              .filterBounds(fc))
 
 def NDVI(image):
   """A function to compute NDVI."""
@@ -43,7 +39,7 @@ vis = {
         '011D01', '011301'
     ]}
 
-Map.setCenter(-93.7848, 30.3252, 11)
+Map.setCenter(-110, 40, 5)
 Map.addLayer(collection.map(NDVI).mean(), vis)
 Map.addLayer(collection.map(SAVI).mean(), vis)
 

@@ -15,4 +15,4 @@ bart_stations = ee.FeatureCollection(
 buffered = bart_stations.map(lambda f: f.buffer(2000))
 unioned = buffered.union()
 
-Map.addLayer(unioned, {'color': '800080'})
+Map.addLayer(unioned, {'color': '800080'}, "BART stations")

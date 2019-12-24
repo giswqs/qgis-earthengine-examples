@@ -10,7 +10,7 @@ import ee
 from ee_plugin import Map
 
 
-Map.setCenter(-110, 40, 5)
+Map.setCenter(-110, 40, 7)
 
 # Filter to only include images within the colorado and utah boundaries.
 polygon = ee.Geometry.Polygon([[
@@ -21,8 +21,7 @@ polygon = ee.Geometry.Polygon([[
 # Create a Landsat 7 composite for Spring of 2000, and filter by
 # the bounds of the FeatureCollection.
 collection = (ee.ImageCollection('LE7_L1T')
-              .filterDate(datetime.datetime(2000, 4, 1),
-                          datetime.datetime(2000, 7, 1))
+              .filterDate("2000-04-01", "2000-07-01")
               .filterBounds(polygon))
 
 # Select the median pixel.
