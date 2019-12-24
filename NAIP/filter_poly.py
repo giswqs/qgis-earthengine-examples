@@ -1,8 +1,6 @@
 import ee
 from ee_plugin import Map
 
-
-
 collection = ee.ImageCollection('USDA/NAIP/DOQQ')
 
 polys = ee.Geometry.Polygon(

@@ -7,7 +7,6 @@ Create an image that masks everything except for the specified polygon.
 import ee
 from ee_plugin import Map
 
-
 Map.setCenter(-100, 40, 4)
 
 fc = (ee.FeatureCollection('ft:1Ec8IWsP8asxN-ywSqgXWMuBaxI6pPaeh6hC64lA')
@@ -25,4 +24,4 @@ Map.addLayer(result, {
     'palette': '000000,FF0000',
     'max': 1,
     'opacity': 0.5
-})
+}, "Basin")

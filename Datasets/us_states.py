@@ -3,11 +3,9 @@
 
 """
 
-# import datetime
 import ee
 from ee_plugin import Map
 
-# Map.setCenter(-110, 40, 5)
 fc = ee.FeatureCollection('TIGER/2018/States')
     # .filter(ee.Filter.eq('STUSPS', 'MN'))
 
