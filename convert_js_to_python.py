@@ -14,7 +14,7 @@ def dict_key_str(line):
     'sigma', 'magnitude', 'size', 'connectedness', 'maxSize', 'eightConnected',
     'reducer', 'labelBand', 'color', 'source', 'maxDistance', 'referenceImage',
     'maxOffset', 'patchWidth', 'strokeWidth', 'width', 'geometry', 'scale', 'maxPixels',
-    'collection', 'selectors']
+    'collection', 'selectors', 'leftField', 'rightField']
     for key in keys:
         if ":" in line and key in line:
             line = line.replace(key + ":", "'" + key + "':")
