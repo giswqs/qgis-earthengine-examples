@@ -13,7 +13,7 @@ def dict_key_str(line):
     'format', 'radius', 'units', 'normalize', 'kernel', 'iterations', 'threshold', 
     'sigma', 'magnitude', 'size', 'connectedness', 'maxSize', 'eightConnected',
     'reducer', 'labelBand', 'color', 'source', 'maxDistance', 'referenceImage',
-    'maxOffset', 'patchWidth']
+    'maxOffset', 'patchWidth', 'strokeWidth', 'width']
     for key in keys:
         if ":" in line and key in line:
             line = line.replace(key + ":", "'" + key + "':")
