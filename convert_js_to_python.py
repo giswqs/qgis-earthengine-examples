@@ -10,7 +10,10 @@ import argparse
 def dict_key_str(line):
 
     keys = ['bands', 'min', 'max', 'gain', 'bias', 'gamma', 'palette', 'opacity', 
-    'format', 'radius', 'units', 'normalize', 'kernel', 'iterations']
+    'format', 'radius', 'units', 'normalize', 'kernel', 'iterations', 'threshold', 
+    'sigma', 'magnitude', 'size', 'image', 'connectedness', 'maxSize', 'eightConnected',
+    'reducer', 'labelBand', 'color', 'source', 'maxDistance', 'referenceImage',
+    'maxOffset', 'patchWidth']
     for key in keys:
         if ":" in line and key in line:
             line = line.replace(key + ":", "'" + key + "':")
@@ -34,6 +37,9 @@ def js_to_python(in_file):
             line = line.replace("var ", "")
             line = line.replace("true", "True")
             line = line.replace("false", "False")
+            line = line.replace("null", "{}")
+            # line = line.replace("or", "Or")
+            # line = line.replace("and", 'And')
             line = dict_key_str(line)
             line = line.rstrip()
 
