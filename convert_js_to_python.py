@@ -11,7 +11,7 @@ def dict_key_str(line):
 
     keys = ['bands', 'min', 'max', 'gain', 'bias', 'gamma', 'palette', 'opacity', 
     'format', 'radius', 'units', 'normalize', 'kernel', 'iterations', 'threshold', 
-    'sigma', 'magnitude', 'size', 'image', 'connectedness', 'maxSize', 'eightConnected',
+    'sigma', 'magnitude', 'size', 'connectedness', 'maxSize', 'eightConnected',
     'reducer', 'labelBand', 'color', 'source', 'maxDistance', 'referenceImage',
     'maxOffset', 'patchWidth']
     for key in keys:
