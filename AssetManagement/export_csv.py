@@ -30,7 +30,7 @@ MyTry = ee.batch.Export.table(values, 'lst_timeseries', taskParams)
 MyTry.start()
 state = MyTry.status()['state']
 while state in ['READY', 'RUNNING']:
-    print state + '...'
+    print(state, '...')
     time.sleep(1)
     state = MyTry.status()['state']
-print 'Done.', MyTry.status()
+print('Done.', MyTry.status())
