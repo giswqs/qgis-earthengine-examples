@@ -33,4 +33,4 @@ castShadows = True
 rgb = utils.hillshadeRGB(demRGB, dem, weight, exaggeration, azimuth, zenith, contrast, brightness, saturation, castShadows)
 Map.addLayer(rgb, {}, 'DEM')
 
-Map.addLayer(dem, {}, 'DEM (raw)', false)
+Map.addLayer(dem, {}, 'DEM (raw)', False)
