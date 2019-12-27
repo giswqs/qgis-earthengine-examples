@@ -25,7 +25,9 @@ def js_to_python(in_file):
     root_dir = os.path.dirname(os.path.abspath(__file__))
     in_file_path = os.path.join(root_dir, in_file)
 
-    header = "import ee \n" + "from ee_plugin import Map \n"
+    github_url = "# GitHub URL: " + "https://github.com/giswqs/qgis-earthengine-examples/tree/master/" + in_file + "\n\n"
+
+    header = github_url +  "import ee \n" + "from ee_plugin import Map \n"
     # print(header)
 
     output = header + "\n"
@@ -43,6 +45,13 @@ def js_to_python(in_file):
             # line = line.replace("and", 'And')
             line = dict_key_str(line)
             line = line.rstrip()
+
+            if "= function" in line:
+                line = line.replace(" = function", "")
+                line = line.replace("{", "")
+                line = "def " + line.rstrip() + ":"
+            if line.strip() == "}":
+                line = line.replace("}", "")
 
             # print(line)
             if line.lstrip().startswith("."):
