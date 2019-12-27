@@ -1,5 +1,7 @@
 # qgis-earthengine-examples
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A collection of **200+** Python examples for using Google Earth Engine in QGIS
 
 **Contact:** Qiusheng Wu (https://wetlands.io)
