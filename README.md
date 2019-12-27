@@ -28,6 +28,18 @@ This repository is a collection of **200+** Python examples for the [Google Eart
 
 The Table of Contents below mimics the structure of the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine). I strongly encourage you to check out the API Documentation if you need an in-depth explanation of each Python example. Please note that the list below does not include all the Python examples contained in this repository. You are welcome to explore the repository and find more examples to suit your needs. 
 
+### [Get Started](https://github.com/giswqs/qgis-earthengine-examples/tree/master/GetStarted)
+
+* [Hello world!](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/01_hello_world.py)
+* [Adding data to QGIS](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/02_adding_data_to_qgis.py)
+* [Finding images](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/03_finding_images.py)
+* [Band math](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/04_band_math.py)
+* [Mapping (what to do instead of a for-loop)](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/05_map_function.py)
+* [Reducing](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/06_reducing.py)
+* [Image statistics](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/07_image_statistics.py)
+* [Masking](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/08_masking.py)
+* [A complete example](https://github.com/giswqs/qgis-earthengine-examples/blob/master/GetStarted/09_a_complete_example.py)
+
 ### [Machine Learning](https://github.com/giswqs/qgis-earthengine-examples/tree/master/MachineLearning)
 
 * Supervised Classification Algorithms
