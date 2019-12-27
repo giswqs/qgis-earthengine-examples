@@ -1,3 +1,5 @@
+# GitHub URL: https://github.com/giswqs/qgis-earthengine-examples/tree/master/Image/download.py
+
 #!/usr/bin/env python
 """Download example."""
 
