@@ -9,7 +9,7 @@ ndvi = image.normalizedDifference(['B5', 'B4'])
 ndwi = image.normalizedDifference(['B3', 'B5'])
 
 # Create a binary layer using logical operations.
-bare = ndvi.lt(0.2).and(ndwi.lt(0))
+bare = ndvi.lt(0.2).And(ndwi.lt(0))
 
 # Mask and display the binary layer.
 Map.setCenter(-122.3578, 37.7726, 12)
