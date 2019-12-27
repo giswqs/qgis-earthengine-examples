@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A collection of **200+** Python examples for using Google Earth Engine in QGIS
+A collection of **220+** Python examples for using Google Earth Engine in QGIS
 
 **Contact:** Qiusheng Wu (https://wetlands.io)
 
 ## 1. Description
 
-This repository is a collection of **200+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* (except those unsupported by QGIS) the JavaScript examples from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
+This repository is a collection of **220+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* (except those unsupported by QGIS) the JavaScript examples from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
 
 ## 2. Usage
 
@@ -63,6 +63,7 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 * [Object-based methods](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Image/object_based.py)
 * [Cumulative Cost Mapping](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Image/cumulative_cost_mapping.py)
 * [Registering Images](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Image/image_displacement.py)
+* [Extract value to points](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Image/extract_value_to_points.py)
 
 ### [ImageCollection](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection)
 
