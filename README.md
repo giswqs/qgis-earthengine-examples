@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A collection of **260+** Python examples for using Google Earth Engine in QGIS
+A collection of **270+** Python examples for using Google Earth Engine in QGIS
 
 **Contact:** Qiusheng Wu (https://wetlands.io)
 
 ## 1. Description
 
-This repository is a collection of **260+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* the JavaScript examples (except those not yet supported by plugin) from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
+This repository is a collection of **270+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* the JavaScript examples (except those not yet supported by plugin) from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
 
 ## 2. Usage
 
@@ -92,7 +92,7 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 * [Reducing a FeatureCollection](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/reducing_feature_collection.py)
 * [Vector to Raster Interpolation](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/idw_interpolation.py)
 * Miscellaneous
-  * [Add new attribute](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/add_new_attribute.py) | [Add area column](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/add_area_column.py) | [Add random value column](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/add_random_value_column.py) | [Single column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics.py) | [Multiple column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_multiple.py) | [Simplify polygons](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/simplify_polygons.py) | [Column statistics by group](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_by_group.py) | [Select by location](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_location.py) | [Select by attributes](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_attributes.py) | [Select by strings](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_strings.py) | [Vector symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/vector_symbology.py) | [Merge FeatureCollection](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/merge_feature_collections.py) | [Search by buffer distance](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/search_by_buffer_distance.py) | [Select columns](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_columns.py)
+  * [Add new attribute](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/add_new_attribute.py) | [Add area column](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/add_area_column.py) | [Add random value column](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/add_random_value_column.py) | [Single column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics.py) | [Multiple column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_multiple.py) | [Simplify polygons](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/simplify_polygons.py) | [Column statistics by group](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_by_group.py) | [Select by location](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_location.py) | [Select by attributes](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_attributes.py) | [Select by strings](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_strings.py) | [Vector symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/vector_symbology.py) | [Merge FeatureCollection](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/merge_feature_collections.py) | [Search by buffer distance](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/search_by_buffer_distance.py) | [Select columns](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_columns.py) | [Mimimum bounding geometry](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/minimum_bounding_geometry.py)
 
 ### [Reducer](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Reducer)
 
@@ -152,6 +152,16 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 * [Client vs. Server](https://github.com/giswqs/qgis-earthengine-examples/blob/master/HowEarthEngineWorks/ClientVsServer.py)
 * [Deferred Execution](https://github.com/giswqs/qgis-earthengine-examples/blob/master/HowEarthEngineWorks/DeferredExecution.py)
 * [Projections](https://github.com/giswqs/qgis-earthengine-examples/blob/master/HowEarthEngineWorks/Projections.py)
+
+### [Filter](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter)
+
+* [Filter to metadata equal to the given value](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_eq.py)
+* [Filter to metadata not equal to the given value](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_neq.py)
+* [Filter on metadata contained in a list](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_in_list.py)
+* [Filter on metadata that cotains a certain string](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_string_contains.py)
+* [Filter on metadata that starts with a certain string](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_string_starts_with.py)
+* [Filter on metadata that ends with a certain string](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_string_ends_with.py)
+* [Filter on metadata that falls within a specified range](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Filter/filter_range_contains.py)
 
 ### [Visualization](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization)
 
