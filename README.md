@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A collection of **250+** Python examples for using Google Earth Engine in QGIS
+A collection of **260+** Python examples for using Google Earth Engine in QGIS
 
 **Contact:** Qiusheng Wu (https://wetlands.io)
 
 ## 1. Description
 
-This repository is a collection of **250+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* the JavaScript examples (except those not yet supported by plugin) from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
+This repository is a collection of **260+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* the JavaScript examples (except those not yet supported by plugin) from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
 
 ## 2. Usage
 
@@ -75,7 +75,7 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 * [Reducing an ImageCollection](https://github.com/giswqs/qgis-earthengine-examples/blob/master/ImageCollection/reducing_collection.py)
 * [Compositing and Mosaicking](https://github.com/giswqs/qgis-earthengine-examples/blob/master/ImageCollection/mosaicking.py)
 * Miscellaneous
-  * [Get image centroid](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/get_image_centroid.py) | [Convert ImageCollection to Image](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/convert_imagecollection_to_image.py) | [Sort by cloud and date](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/sort_by_cloud_and_date.py) | [Filtering by metadata](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/filtering_by_metadata.py) | [Filtering by band names](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/filtering_by_band_names.py)
+  * [Get image centroid](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/get_image_centroid.py) | [Convert ImageCollection to Image](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/convert_imagecollection_to_image.py) | [Sort by cloud and date](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/sort_by_cloud_and_date.py) | [Filtering by metadata](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/filtering_by_metadata.py) | [Filtering by band names](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/filtering_by_band_names.py) | [Select image by index](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/select_image_by_index.py) | [Creating monthly imagery](https://github.com/giswqs/qgis-earthengine-examples/tree/master/ImageCollection/creating_monthly_imagery.py)
 
 ### [Geometry, Feature, FeatureCollection](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection)
 
@@ -92,7 +92,7 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 * [Reducing a FeatureCollection](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/reducing_feature_collection.py)
 * [Vector to Raster Interpolation](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/idw_interpolation.py)
 * Miscellaneous
-  * [Add new attribute](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/add_new_attribute.py) | [Single column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics.py) | [Multiple column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_multiple.py) | [Simplify polygons](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/simplify_polygons.py) | [Column statistics by group](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_by_group.py)
+  * [Add new attribute](https://github.com/giswqs/qgis-earthengine-examples/blob/master/FeatureCollection/add_new_attribute.py) | [Add area column](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/add_area_column.py) | [Add random value column](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/add_random_value_column.py) | [Single column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics.py) | [Multiple column statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_multiple.py) | [Simplify polygons](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/simplify_polygons.py) | [Column statistics by group](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/column_statistics_by_group.py) | [Select by location](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_location.py) | [Select by attributes](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_attributes.py) | [Select by strings](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_by_strings.py) | [Vector symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/vector_symbology.py) | [Merge FeatureCollection](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/merge_feature_collections.py) | [Search by buffer distance](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/search_by_buffer_distance.py) | [Select columns](https://github.com/giswqs/qgis-earthengine-examples/tree/master/FeatureCollection/select_columns.py)
 
 ### [Reducer](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Reducer)
 
@@ -169,7 +169,7 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 * [NLCD Land Cover](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/nlcd_land_cover.py)
 * [US Counties](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/us_counties.py)
 * Miscellaneous
-  * [NDVI symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/ndvi_symbology.py) | [NDWI symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/ndvi_symbology.py) | [Landsat symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/landsat_symbology.py)
+  * [NDVI symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/ndvi_symbology.py) | [NDWI symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/ndvi_symbology.py) | [Landsat symbology](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/landsat_symbology.py) | [Color by attribute](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Visualization/color_by_attribute.py)
 
 ### [Datasets](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets)
 
