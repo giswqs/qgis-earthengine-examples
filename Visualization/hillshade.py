@@ -1,3 +1,4 @@
+import math
 import ee
 from ee_plugin import Map
 
@@ -23,4 +24,3 @@ slope_img = Radians(terrain.select('slope'))
 aspect_img = Radians(terrain.select('aspect'))
 
 Map.addLayer(Hillshade(0, 60, slope_img, aspect_img))
-
