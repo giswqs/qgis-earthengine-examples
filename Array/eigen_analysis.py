@@ -18,7 +18,7 @@ def getPrincipalComponents(centered, scale, region):
   arrays = centered.toArray()
 
   # Compute the covariance of the bands within the region.
-  co= arrays.reduceRegion({
+  covar = arrays.reduceRegion({
     'reducer': ee.Reducer.centeredCovariance(),
     'geometry': region,
     'scale': scale,
