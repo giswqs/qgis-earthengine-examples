@@ -9,12 +9,11 @@ import argparse
 
 def dict_key_str(line):
 
-    keys = ['bands', 'min', 'max', 'gain', 'bias', 'gamma', 'palette', 'opacity', 
-    'format', 'radius', 'units', 'normalize', 'kernel', 'iterations', 'threshold', 
-    'sigma', 'magnitude', 'size', 'connectedness', 'maxSize', 'eightConnected',
-    'reducer', 'labelBand', 'color', 'source', 'maxDistance', 'referenceImage',
-    'maxOffset', 'patchWidth', 'strokeWidth', 'width', 'geometry', 'scale', 'maxPixels',
-    'collection', 'selectors', 'leftField', 'rightField']
+    keys = """bands bias collection color connectedness eightConnected format gain gamma
+              geometry iterations kernel labelBand leftField magnitude max maxDistance
+              maxOffset maxPixels maxSize min normalize opacity palette patchWidth
+              radius reducer referenceImage rightField scale selectors sigma size source
+              strokeWidth threshold units width""".split()
     for key in keys:
         if ":" in line and key in line:
             line = line.replace(key + ":", "'" + key + "':")
@@ -35,29 +34,24 @@ def js_to_python(in_file):
     with open(in_file_path) as f:
         lines = f.readlines()
         for line in lines:
-            line = line.replace("//", "#")
-            line = line.replace(";", "")
-            line = line.replace("var ", "")
-            line = line.replace("true", "True")
-            line = line.replace("false", "False")
+            line = line.replace("//", "#").replace(";", "").replace("var ", "")
+            line = line.replace("true", "True").replace("false", "False")
             line = line.replace("null", "{}")
             # line = line.replace("or", "Or")
             # line = line.replace("and", 'And')
-            line = dict_key_str(line)
-            line = line.rstrip()
+            line = dict_key_str(line).rstrip()
 
             if "= function" in line:
-                line = line.replace(" = function", "")
-                line = line.replace("{", "")
+                line = line.replace(" = function", "").replace("{", "")
                 line = "def " + line.rstrip() + ":"
             if line.strip() == "}":
-                line = line.replace("}", "")
+                line = ""
 
             # print(line)
             if line.lstrip().startswith("."):
                 output = output.rstrip() + " " + "\\" + "\n" + line + "\n"
             else:
-                output = output + line + "\n"
+                output += line + "\n"
 
     print(output)
 
