@@ -7,17 +7,19 @@ $ python convert_js_to_python.py --input Image/band_math.py
 import os
 import argparse
 
+
 def dict_key_str(line):
 
-    keys = """bands bias collection color connectedness eightConnected format gain gamma
-              geometry iterations kernel labelBand leftField magnitude max maxDistance
-              maxOffset maxPixels maxSize min normalize opacity palette patchWidth
-              radius reducer referenceImage rightField scale selectors sigma size source
-              strokeWidth threshold units width""".split()
+    keys = """bands bestEffort bias collection color connectedness eeObject eightConnected format gain gamma
+              geometry groupField groupName image iterations kernel labelBand leftField magnitude max maxDistance
+              maxOffset maxPixels maxSize minBucketWidth min name normalize opacity palette patchWidth
+              radius reducer referenceImage region rightField scale selectors shown sigma size source
+              strokeWidth threshold units visParams width""".split()
     for key in keys:
         if ":" in line and key in line:
             line = line.replace(key + ":", "'" + key + "':")
     return line
+
 
 def js_to_python(in_file):
 
@@ -25,7 +27,8 @@ def js_to_python(in_file):
     in_file_path = os.path.join(root_dir, in_file)
 
     bool_python = False
-    github_url = "# GitHub URL: " + "https://github.com/giswqs/qgis-earthengine-examples/tree/master/" + in_file + "\n\n"
+    github_url = "# GitHub URL: " + \
+        "https://github.com/giswqs/qgis-earthengine-examples/tree/master/" + in_file + "\n\n"
 
     lines = []
     with open(in_file_path) as f:
@@ -33,7 +36,7 @@ def js_to_python(in_file):
         for line in lines:
             line = line.strip()
             if line == 'import ee':
-                bool_python = True  
+                bool_python = True
 
     output = ""
 
@@ -41,13 +44,14 @@ def js_to_python(in_file):
         output = github_url + ''.join(map(str, lines))
     else:             # deal with JavaScript
 
-        header = github_url +  "import ee \n" + "from ee_plugin import Map \n"
+        header = github_url + "import ee \n" + "from ee_plugin import Map \n"
         output = header + "\n"
 
         with open(in_file_path) as f:
             lines = f.readlines()
             for line in lines:
-                line = line.replace("//", "#").replace(";", "").replace("var ", "")
+                line = line.replace("//", "#").replace(";",
+                                                       "").replace("var ", "")
                 line = line.replace("true", "True").replace("false", "False")
                 line = line.replace("null", "{}")
                 line = line.replace(".or", ".Or")
@@ -71,8 +75,8 @@ def js_to_python(in_file):
     # print(output)
 
     with open(in_file_path, 'w') as f:
-        f.write(output)            
-    
+        f.write(output)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
