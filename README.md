@@ -4,7 +4,7 @@
 
 A collection of **270+** Python examples for using Google Earth Engine in QGIS
 
-**Contact:** Qiusheng Wu (https://wetlands.io)
+**Contact:** Qiusheng Wu (<https://wetlands.io>)
 
 ## 1. Description
 
@@ -20,11 +20,19 @@ This repository is a collection of **270+** Python examples for the [Google Eart
 * **Step 6:** Click the *Run script* button on the Python Editor to execute the script.
 * **Step 7:** Zoom in/out the QGIS Canvas to inspect the results.
 
-## 3. Demo
+## 3. Add QGIS Basemaps
+
+* Open the Python console in QGIS and load the Python script ([Basemaps/qgis_basemaps.py](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Basemaps/qgis_basemaps.py)) into the QGIS Python Editor.
+* Click the *Run script* button on the Python Editor to execute the script. This will add many basesmaps as XYZ tiles to QGIS. Select and double click any basemap under XYZ Ttiles to be added to QGIS Canvas. See the screenshot below.
+* Alternatively, you can install the QGIS [QuickMapServices](https://plugins.qgis.org/plugins/quick_map_services/) plugin. After installing the plugin, go to _QGIS_ -- _Web_ --_QuickMapServices_ -- _Settings_ -- _More services_ -- _Get contributed pack_ -- _Save_.  
+
+![QGIS Basemaps](https://i.imgur.com/DWL7rrd.png)
+
+## 4. Earth Engine Plugin Demo
 
 ![qgis-gee-demo](https://i.imgur.com/OuWQlsF.gif)
 
-## 4. Examples
+## 5. Examples
 
 The Table of Contents below mimics the structure of the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine). I strongly encourage you to check out the API Documentation if you need an in-depth explanation of each Python example. Please note that the list below does not include all the Python examples contained in this repository. You are welcome to explore the repository and find more examples to suit your needs. 
 
@@ -167,7 +175,7 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 
 * [RGB composite](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/image_rgb_composite.py)
 * [Color palettes](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/image_color_palettes.py)
-* [Color ramp ](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/image_color_ramp.py)
+* [Color ramp](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/image_color_ramp.py)
 * [Hillshade](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/hillshade.py)
 * [Image stretch](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/image_stretch.py)
 * [Image thumbnail](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Visualization/image_thumbanil.py)
