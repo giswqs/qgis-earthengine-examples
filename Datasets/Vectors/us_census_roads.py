@@ -1,3 +1,5 @@
+# GitHub URL: https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_roads.py
+
 import ee 
 from ee_plugin import Map 
 

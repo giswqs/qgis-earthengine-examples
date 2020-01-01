@@ -1,3 +1,5 @@
+# GitHub URL: https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_counties.py
+
 #!/usr/bin/env python
 """Display US Counties.
 

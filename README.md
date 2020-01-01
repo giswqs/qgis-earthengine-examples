@@ -193,6 +193,21 @@ The Table of Contents below mimics the structure of the Google Earth Engine [API
 
 * [Terrain](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Terrain)
 * [Water](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Water)
+* [Vector datasets catalog](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors)
+  * [Large Scale International Boundary Polygons (LSIB)](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/international_boundary.py)
+  * [TIGER: US 2018 Census Counties](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_counties.py)
+  * [TIGER: US 2018 Census States](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_states.py)
+  * [TIGER: US 2016 Census Roads](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_roads.py)
+  * [TIGER: US 2010 Census Blocks](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_blocks.py)
+  * [TIGER: US Census 2010 Census Tracts + Demographic Profile 1 aggregate statistics](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_tracts.py)
+  * [TIGER: US Census 2010 5-digit ZIP Code Tabulation Areas](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_census_zip_code.py)
+  * [GLIMS: Global Land Ice Measurements from Space](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/global_land_ice_measurements.py)
+  * [USGS Watershed Boundary Datasets](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/usgs_watershed_boundary.py)
+  * [USA EPA Ecoregions](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/us_epa_ecoregions.py)
+  * [RESOLVE Ecoregions](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/resolve_ecoregions.py)
+  * [World Database on Protected Areas (WDPA)](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/world_database_on_protected_areas.py)
+  * [WRI Global Power Plant Database](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/global_power_plant_database.py)
+  * [Landsat WRS-2 grid](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/landsat_wrs2_grid.py)
 
 ### [Gena's Examples](https://github.com/giswqs/qgis-earthengine-examples/tree/master/Gena)
 

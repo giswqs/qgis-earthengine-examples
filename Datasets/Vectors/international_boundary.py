@@ -1,5 +1,9 @@
+# GitHub URL: https://github.com/giswqs/qgis-earthengine-examples/tree/master/Datasets/Vectors/international_boundary.py
+
 import ee 
 from ee_plugin import Map 
+
+# LSIB: Large Scale International Boundary Polygons, Simplified
 
 # dataset = ee.FeatureCollection('USDOS/LSIB_SIMPLE/2017')
 # styleParams = {
@@ -11,6 +15,7 @@ from ee_plugin import Map
 # Map.addLayer(countries, {}, 'USDOS/LSIB_SIMPLE/2017')
 
 
+# LSIB: Large Scale International Boundary Polygons, Detailed
 dataset = ee.FeatureCollection('USDOS/LSIB/2013')
 visParams = {
   'palette': ['f5ff64', 'b5ffb4', 'beeaff', 'ffc0e8', '8e8dff', 'adadad'],

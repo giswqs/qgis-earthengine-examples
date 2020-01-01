@@ -24,36 +24,51 @@ def js_to_python(in_file):
     root_dir = os.path.dirname(os.path.abspath(__file__))
     in_file_path = os.path.join(root_dir, in_file)
 
+    bool_python = False
     github_url = "# GitHub URL: " + "https://github.com/giswqs/qgis-earthengine-examples/tree/master/" + in_file + "\n\n"
 
-    header = github_url +  "import ee \n" + "from ee_plugin import Map \n"
-    # print(header)
-
-    output = header + "\n"
-
+    lines = []
     with open(in_file_path) as f:
         lines = f.readlines()
         for line in lines:
-            line = line.replace("//", "#").replace(";", "").replace("var ", "")
-            line = line.replace("true", "True").replace("false", "False")
-            line = line.replace("null", "{}")
-            # line = line.replace("or", "Or")
-            # line = line.replace("and", 'And')
-            line = dict_key_str(line).rstrip()
+            line = line.strip()
+            if line == 'import ee':
+                bool_python = True  
 
-            if "= function" in line:
-                line = line.replace(" = function", "").replace("{", "")
-                line = "def " + line.rstrip() + ":"
-            if line.strip() == "}":
-                line = ""
+    output = ""
 
-            # print(line)
-            if line.lstrip().startswith("."):
-                output = output.rstrip() + " " + "\\" + "\n" + line + "\n"
-            else:
-                output += line + "\n"
+    if bool_python:   # only update the GitHub URL if it is already a gee Python script
+        output = github_url + ''.join(map(str, lines))
+    else:             # deal with JavaScript
 
-    print(output)
+        header = github_url +  "import ee \n" + "from ee_plugin import Map \n"
+        output = header + "\n"
+
+        with open(in_file_path) as f:
+            lines = f.readlines()
+            for line in lines:
+                line = line.replace("//", "#").replace(";", "").replace("var ", "")
+                line = line.replace("true", "True").replace("false", "False")
+                line = line.replace("null", "{}")
+                line = line.replace(".or", ".Or")
+                line = line.replace(".and", '.And')
+                line = line.replace(".not", '.Not')
+
+                line = dict_key_str(line).rstrip()
+
+                if "= function" in line:
+                    line = line.replace(" = function", "").replace("{", "")
+                    line = "def " + line.rstrip() + ":"
+                # if line.strip() == "}":
+                #     line = ""
+
+                # print(line)
+                if line.lstrip().startswith("."):
+                    output = output.rstrip() + " " + "\\" + "\n" + line + "\n"
+                else:
+                    output += line + "\n"
+
+    # print(output)
 
     with open(in_file_path, 'w') as f:
         f.write(output)            
