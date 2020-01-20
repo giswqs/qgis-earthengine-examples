@@ -36,7 +36,7 @@ This repository is a collection of **290+** Python examples for the [Google Eart
 
 If you do not have QGIS installed on your computer, you can try Earth Engine API and the folium library for interactive mapping. A Jupyter notebook example can be found [here](https://github.com/giswqs/qgis-earthengine-examples/blob/master/Folium/ee-api-folium-setup.ipynb). 
 
-## 6. Examples
+## 6. QGIS Examples
 
 The Table of Contents below mimics the structure of the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine). I strongly encourage you to check out the API Documentation if you need an in-depth explanation of each Python example. Please note that the list below does not include all the Python examples contained in this repository. You are welcome to explore the repository and find more examples to suit your needs. 
 
