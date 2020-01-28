@@ -1,6 +1,6 @@
-import math
 import ee
 from ee_plugin import Map
+import math
 
 
 def Radians(img):

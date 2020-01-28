@@ -1,6 +1,6 @@
 import ee 
-import math
 from ee_plugin import Map 
+import math
 
 # Load the two images to be registered.
 image1 = ee.Image('SKYSAT/GEN-A/PUBLIC/ORTHO/MULTISPECTRAL/s01_20150502T082736Z')

@@ -3,9 +3,6 @@
 import ee 
 from ee_plugin import Map 
 
-import ee 
-from ee_plugin import Map 
-
 states = ee.FeatureCollection('TIGER/2018/States')
 # print(states.first().getInfo())
 

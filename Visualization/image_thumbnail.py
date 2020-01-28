@@ -8,7 +8,9 @@ image = ee.Image('CGIAR/SRTM90_V4')
 # Set masked pixels (ocean) to 1000 so they map as gray.
 thumbnail1 = image.unmask(1000).getThumbURL({
   'min': 0,
-  'max': 3000
+  'max': 3000,
+  'dimensions': 500,
+  'region': ee.Geometry.Rectangle([-84.6, -55.9, -32.9, 15.7]),
 })
 print('Thumbnail:', thumbnail1)
 

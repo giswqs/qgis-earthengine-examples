@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 """Compute hillshade from elevation."""
 
-import math
 import ee
 from ee_plugin import Map
+import math
 
 Map.setCenter(-121.767, 46.852, 11)
 

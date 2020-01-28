@@ -1,6 +1,6 @@
 import ee 
-import math
 from ee_plugin import Map 
+import math
 
 # Load a high-resolution NAIP image.
 image = ee.Image('USDA/NAIP/DOQQ/m_3712213_sw_10_1_20140613')

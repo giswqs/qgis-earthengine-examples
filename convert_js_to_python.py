@@ -57,6 +57,7 @@ def js_to_python(in_file):
                 line = line.replace(".or", ".Or")
                 line = line.replace(".and", '.And')
                 line = line.replace(".not", '.Not')
+                line = line.replace('visualize({', 'visualize(**{')
 
                 line = dict_key_str(line).rstrip()
 

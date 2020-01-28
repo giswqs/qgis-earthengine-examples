@@ -6,9 +6,9 @@ The land areas are displayed normally, but the water areas
 are streched to show more details.
 """
 
-import datetime
 import ee
 from ee_plugin import Map
+import datetime
 
 
 Map.setCenter(-95.738, 18.453, 9)
