@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 .vscode/
 Private/
+.vscode/settings.json
 
 # C extensions
 *.so
