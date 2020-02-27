@@ -6,7 +6,7 @@ $ python convert_js_to_python.py --input Image/band_math.py
 
 import os
 import argparse
-
+from pathlib import Path
 
 def dict_key_str(line):
 
@@ -21,14 +21,25 @@ def dict_key_str(line):
     return line
 
 
-def js_to_python(in_file):
+def js_to_python(in_file, out_file):
+
+    in_file_path = in_file
+    out_file_path = out_file
 
     root_dir = os.path.dirname(os.path.abspath(__file__))
-    in_file_path = os.path.join(root_dir, in_file)
-
+    if not os.path.isfile(in_file_path):
+        in_file_path = os.path.join(root_dir, in_file_path)
+    if not os.path.isfile(out_file_path):
+        out_file_path = os.path.join(root_dir, out_file_path)
+    
     bool_python = False
-    github_url = "# GitHub URL: " + \
-        "https://github.com/giswqs/qgis-earthengine-examples/tree/master/" + in_file + "\n\n"
+    add_github_url = False
+
+    if add_github_url:
+        github_url = "# GitHub URL: " + \
+            "https://github.com/giswqs/qgis-earthengine-examples/tree/master/" + in_file + "\n\n"
+    else:
+        github_url = ""
 
     lines = []
     with open(in_file_path) as f:
@@ -75,15 +86,31 @@ def js_to_python(in_file):
 
     # print(output)
 
-    with open(in_file_path, 'w') as f:
+    with open(out_file_path, 'w') as f:
         f.write(output)
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--input', type=str,
-                        help="Path to the input python file")
-    # parser.add_argument('--image_path', type=str, help="Path to the input GeoTIFF image")
-    # parser.add_argument('--save_path', type=str, help="Path where the output map will be saved")
-    args = parser.parse_args()
-    js_to_python(args.input)
+
+    ## Convert one JavaScript file to Python
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    in_file_path = os.path.join(root_dir, "JavaScripts/NormalizedDifference.js")  # change this path to your JavaScript file
+    out_file_path = os.path.splitext(in_file_path)[0] + ".py"
+    js_to_python(in_file_path, out_file_path)
+    print("Saved python script: {}".format(out_file_path))
+
+    ## Convert all JavaScript files in a folder to Python
+    in_dir = os.path.join(root_dir, "JavaScripts")   # change this path to your JavaScript folder
+    in_dir = "/home/qiusheng/Downloads/earthengine-api/javascript/src/examples/"
+    for in_file_path in Path(in_dir).rglob('*.js'):
+        out_file_path = os.path.splitext(in_file_path)[0] + ".py"
+        js_to_python(in_file_path, out_file_path)
+    print("Saved python script folder: {}".format(in_dir))
+
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--input', type=str,
+    #                     help="Path to the input JavaScript file")
+    # parser.add_argument('--output', type=str,
+    #                     help="Path to the output Python file")
+    # args = parser.parse_args()
+    # js_to_python(args.input, args.output)

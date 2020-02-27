@@ -1,4 +1,5 @@
 import ee
+from ee_plugin import Map 
 
 image = ee.Image('LANDSAT/LC8_L1T/LC80440342014077LGN00')
 
