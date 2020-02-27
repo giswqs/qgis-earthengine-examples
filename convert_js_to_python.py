@@ -101,7 +101,6 @@ if __name__ == '__main__':
 
     ## Convert all JavaScript files in a folder to Python
     in_dir = os.path.join(root_dir, "JavaScripts")   # change this path to your JavaScript folder
-    in_dir = "/home/qiusheng/Downloads/earthengine-api/javascript/src/examples/"
     for in_file_path in Path(in_dir).rglob('*.js'):
         out_file_path = os.path.splitext(in_file_path)[0] + ".py"
         js_to_python(in_file_path, out_file_path)
