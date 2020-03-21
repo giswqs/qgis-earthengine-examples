@@ -11,8 +11,8 @@ from ee_plugin import Map
 
 Map.setCenter(-122.45, 37.75, 13)
 
-bart = ee.FeatureCollection('ft:1xCCZkVn8DIkB7i7RVkvsYWxAxsdsQZ6SbD9PCXw')
-parks = ee.FeatureCollection('ft:10KC6VfBWMUvNcuxU7mbSEg__F_4UVe9uDkCldBw')
+bart = ee.FeatureCollection('GOOGLE/EE/DEMOS/bart-locations')
+parks = ee.FeatureCollection('GOOGLE/EE/DEMOS/sf-parks')
 buffered_bart = bart.map(lambda f: f.buffer(2000))
 
 join_filter = ee.Filter.withinDistance(2000, '.geo', None, '.geo')

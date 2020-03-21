@@ -9,7 +9,7 @@ from ee_plugin import Map
 
 Map.setCenter(-100, 40, 4)
 
-fc = (ee.FeatureCollection('ft:1Ec8IWsP8asxN-ywSqgXWMuBaxI6pPaeh6hC64lA')
+fc = (ee.FeatureCollection('RESOLVE/ECOREGIONS/2017')
       .filter(ee.Filter().eq('ECO_NAME', 'Great Basin shrub steppe')))
 
 # Start with a black image.
