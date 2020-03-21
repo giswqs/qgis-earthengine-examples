@@ -10,8 +10,7 @@ from ee_plugin import Map
 
 Map.setCenter(-122.39, 37.7857, 12)
 
-photos_near_sf = ee.FeatureCollection(
-    'ft:1qpKIcYQMBsXLA9RLWCaV9D0Hus2cMQHhI-ViKHo')
+photos_near_sf = ee.FeatureCollection('GOOGLE/EE/DEMOS/sf-photo-locations')
 bridge_photos = photos_near_sf.filter(
     ee.Filter().Or(ee.Filter.stringContains('title', 'Bridge'),
                    ee.Filter.stringContains('title', 'bridge')))
