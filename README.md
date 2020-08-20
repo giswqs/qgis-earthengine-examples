@@ -8,7 +8,7 @@ A collection of **290+** Python examples for using Google Earth Engine in QGIS
 
 ## 1. Description
 
-This repository is a collection of **290+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* the JavaScript examples (except those not yet supported by plugin) from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Gena's examples](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [Gennadii Donchyts](https://github.com/gena) for developing this amazing Google Earth Engine plugin for QGIS.
+This repository is a collection of **290+** Python examples for the [Google Earth Engine plugin for QGIS](https://github.com/gee-community/qgis-earthengine-plugin). I developed these Python examples by converting *all* the JavaScript examples (except those not yet supported by plugin) from the Google Earth Engine [API Documentation](https://developers.google.com/earth-engine/). Additionally, some examples were adapted from [Google Earth Engine plugin](https://github.com/gee-community/qgis-earthengine-plugin/tree/master/examples) and the Earth Engine [API examples](https://github.com/google/earthengine-api/tree/master/python/examples). Kudos to [GEE Community](https://github.com/gee-community) for developing this amazing Google Earth Engine plugin for QGIS.
 
 ## 2. Usage
 
