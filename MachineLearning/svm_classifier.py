@@ -37,7 +37,7 @@ training = image.sampleRegions(**{
 })
 
 # Create an SVM classifier with custom parameters.
-classifier = ee.Classifier.svm(**{
+classifier = ee.Classifier.libsvm(**{
   'kernelType': 'RBF',
   'gamma': 0.5,
   'cost': 10
