@@ -26,7 +26,7 @@ training = image.select(bands).sampleRegions(**{
 })
 
 # Train a CART classifier with default parameters.
-trained = ee.Classifier.cart().train(training, label, bands)
+trained = ee.Classifier.smileCart().train(training, label, bands)
 
 # Classify the image with the same bands used for training.
 classified = image.select(bands).classify(trained)
